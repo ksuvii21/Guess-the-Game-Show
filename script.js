@@ -201,15 +201,6 @@ function checkAnswer(selected) {
   } else {
     document.getElementById("result").innerText = `❌ Incorrect! The correct answer was: ${q.answer}`;
   }
-  if (selected === q.answer) {
-  score++;
-  correctSound.play();
-  document.getElementById("result").innerText = "✅ Correct!";
-  } else {
-  wrongSound.play();
-  document.getElementById("result").innerText = `❌ Incorrect! The correct answer was: ${q.answer}`;
- }
-
   document.getElementById("next-btn").style.display = "inline-block";
 }
 
